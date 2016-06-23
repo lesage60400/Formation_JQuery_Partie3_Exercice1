@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> My first increment </title>
+</head>
+<body>
+
+  <input type="text" name="TextBox" id="TextBox" value="0" />
+   <input type="Button" id='AddButton' value="Cliquez sur le bouton si vous apprécier mon Site !" />
+   <script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('#AddButton').click( function() {
+       var counter = $('#TextBox').val();
+       counter++ ;
+       if(counter==10){
+         counter=0
+       }
+        $('#TextBox').val(counter);
+      });
+    });
+
+     </script>
+   </body>
+   </html>
